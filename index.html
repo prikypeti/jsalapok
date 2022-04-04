@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScirpt alapfogalmak</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/alapok.jpg" alt="Alapok" height="300px" width="100%">
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#valtozo">Változó</a></li>
+            <li><a href="#deklaracio">Deklaráció</a></li>
+            <li><a href="#undefined">Undefined</a></li>
+            <li><a href="#operator">Operátor</a></li>
+            <li><a href="#konkatenacio">Konkatenáció</a></li>
+        </ul>
+    </nav>
+
+    <section id="valtozo">
+        <h2>Változó</h2>
+        <article>
+            <h3>Definíció:</h3>
+            <p>A változókat tekinthetjük egy olyan absztraktciónak a programon belül, melyhez opcionálisan tetszőleges
+                típusú értéket rendelhetünk. A változó nevét azonosítónak hívjuk és az elnevezés formája szabályokhoz
+                van kötve.
+            </p>
+            <h3>Saját megfogalmazással:</h3>
+            <p>A változók azt a célt szolgálják, hogy adatot tároljunk bennük. Az adat típusa bármilyen lehet, például
+                szám, karakter, szöveg vagy logikai érték.</p>
+            <h3>Példa:</h3>
+            <div>
+                let color = "black"; <br>
+                let color; <br>
+                console.log("The color is: " + color);
+            </div>
+        </article>
+        <h3>Videó:</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Dc3cXhlMAO8" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe> <br>
+        <a href="https://webiskola.hu/javascript-ismeretek/javascript-valtozok-es-konstansok-var-let-es-const-magyarul/"
+            target="_blank">Forrás oldal</a>
+    </section>
+
+    <section id="deklaracio">
+        <h2>Deklaráció</h2>
+        <article>
+            <h3>Definíció:</h3>
+            <p>Változó létrehozását deklarációnak hívják. JavaScriptben három formáját ismerjük a deklarálásnak: <br>
+
+                • var - ezzel a kulcsszóval deklarálhatunk egy változót, melynek értékét a program futása közben
+                módosítani lehet és opcionálisan inicializálhatunk egy tetszőleges típusú kezdőértékkel. <br>
+
+                • let - ezzel a kulcsszóval egy blokk hatókörben érvényes lokális változót deklarálhatunk, melyet
+                opcionálisan inicializálhatunk egy tetszőleges típusú kezdőértékkel. <br>
+
+                • const - ezzel a kulcsszóval deklarálhatunk egy kizárólag olvasható, melynek értékét a program futása
+                közben nem lehet módosítani és kötelező inicializálni egy tetszőleges típusú kezdőértékkel.
+            <h3>Saját megfogalmazással:</h3>
+            <p>Változó létrehozását nevezzük deklarációnak.</p>
+            <h3>Példa:</h3>
+            <div>
+                let eletkor = 32; <br>
+                if (eletkor > 18) {
+                console.log("Te már nem vagy gyerek.")
+                }
+            </div>
+        </article>
+        <h3>Videó:</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ly7sqN4zdr8" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe> <br>
+        <a href="http://www.inf.u-szeged.hu/~tarib/javascript/valtozok.html#deklaracio" target="_blank">Forrás
+            oldal</a>
+    </section>
+
+    <section id="undefined">
+        <h2>Undefined</h2>
+        <article>
+            <h3>Definíció:</h3>
+            <p>A változó létre lett hozva, de nem lett hozzárendelve érték. Arra vár, hogy értéket kapjon, és ekkor a
+                típusa is megváltozik.
+            </p>
+            <h3>Példa:</h3>
+            <div>
+                let a; <br>
+                console.log(a);
+            </div>
+        </article>
+        <h3>videó:</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UYkUOZLEJXk" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe> <br>
+        <a href="https://hu.denizatm.com/pages/48136-what-s-the-difference-between-null-and-undefined-in-javascri"
+            target="_blank">Forrás
+            oldal</a>
+    </section>
+
+    <section id="operator">
+        <h2>Operátor</h2>
+        <article>
+            <h3>Definíció:</h3>
+            <p>Operátoroknak nevezzük azokat a nem-szöveges szimbólumokat, amelyek valamilyen műveletet írnak le. A
+                legegyszerűbb ilyen műveletek az összeadás, a kivonás, a szorzás és az osztás. Ezek az alapvető
+                operátorok minden programnyelvben megtalálhatóak, de ezenfelül is számos operátor létezik.
+            </p>
+            <h3>Példa:</h3>
+            <div>
+                let szam1 = 10; <br>
+                let szam2 = 20; <br>
+                let osszes = szam1 + szam2; //total = 20
+            </div>
+        </article>
+        <h3>Videó:</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/50KPOqw--vg" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe> <br>
+        <a href="https://webiskola.hu/javascript-ismeretek/javascript-operatorok-ismertetese-js-aritmetikai-ertekado-osszehasonlito-logikai-bitenkenti-es-tipus-operator-bemutatasa/"
+            target="_blank">Forrás
+            oldal</a>
+    </section>
+
+    <section id="konkatenacio">
+        <h2>Konkatenáció</h2>
+        <article>
+            <h3>Definíció:</h3>
+            <p> A konkatenáció szó magyar körökben is ismert, főleg, ha valaki programozással foglalkozik. Konkrétan azt
+                jelenti, hogy összefűzés. Segítségével számokat, szövegeket, karaktereket szoktunk összefűzni.
+            </p>
+            <h3>Példa:</h3>
+            <div>
+                let str1 = "Prikkel" <br>
+                let str2 = "Péter" <br>
+                let result = str1.concat(" ", str2); //result = Prikkel Péter
+            </div>
+        </article>
+        <h3>Videó:</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FCZhNaTtePc" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe> <br>
+        <a href="https://webiskola.hu/javascript-ismeretek/javascript-string-muveletek-metodusok-fuggvenyek-tulajdonsagok/"
+            target="_blank">Forrás
+            oldal</a>
+    </section>
+</body>
+
+</html>

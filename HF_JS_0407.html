@@ -1,0 +1,49 @@
+<script>
+
+let sum = 0;
+        let aosztaly = [175, 185, 192, 162, 188, 175, 169, 179, 159, 200]; 
+
+        let bosztaly = [157, 178, 182, 184, 177, 180, 185, 167, 169, 186];  
+
+        let magassag = prompt("Melyik osztály magasabb? A vagy B");
+
+        if (magassag == "A") {
+            for (let i = 0; i < aosztaly.length; i++) { sum += aosztaly[i]; }
+            alert(sum / aosztaly.length + " A osztály átlag magassága");
+        }
+        else if (magassag == "B") {
+            for (let i = 0; i < bosztaly.length; i++) { sum += bosztaly[i]; }
+            alert(sum / bosztaly.length + " B osztály átlag magassága");
+        }
+        else {
+            alert("Nincs ilyen osztály. Probáld újra")
+        }
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+let alkalmazottak = [
+            ["alice", "programozó", 140000],
+            ["bob", "programozó", 140000],
+            ["cecil", "tesztelő", 100000],
+        ];
+
+        let fizu = prompt("Programozó vagy a tesztelő keresnek többet?")
+
+        if (fizu == "programozó") {
+            alert(alkalmazottak[0][2] + alkalmazottak[1][2] + " programozók fizetése összesen")
+        }
+        else if (fizu == "tesztelő") {
+            alert(alkalmazottak[2][2] + " tesztelők fizetése összesen")
+        }
+        else {
+            alert("Nincs ilyen pozíció. Probálkozz újra")
+        };
+
+
+
+</script>
